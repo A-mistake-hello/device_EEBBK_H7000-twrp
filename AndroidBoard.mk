@@ -28,3 +28,8 @@ LOCAL_PATH := $(call my-dir)
 ifneq ($(filter H7000,$(TARGET_DEVICE)),)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
+
+COMMON_LUNCH_CHOICES := \
+    omni_H100-user \
+    omni_H100-userdebug \
+    omni_H100-eng
