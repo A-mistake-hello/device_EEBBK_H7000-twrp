@@ -80,4 +80,4 @@ TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
 # defind version information
-TW_DEVICE_VERSION := $(shell date -u +"%Y%m%d"-"BOOM")
+TW_DEVICE_VERSION := $(shell date -u +"%Y%m%d"-"XiKo")
