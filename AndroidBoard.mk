@@ -30,6 +30,6 @@ include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
 
 COMMON_LUNCH_CHOICES := \
-    omni_H100-user \
-    omni_H100-userdebug \
-    omni_H100-eng
+    twrp_H100-user \
+    twrp_H100-userdebug \
+    twrp_H100-eng
