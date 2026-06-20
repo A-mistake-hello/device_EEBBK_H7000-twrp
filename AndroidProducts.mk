@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_H7000.mk
+    $(LOCAL_DIR)/twrp_H7000.mk
