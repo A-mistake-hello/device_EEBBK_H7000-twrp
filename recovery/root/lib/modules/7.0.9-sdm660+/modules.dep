@@ -1,0 +1,571 @@
+kernel/arch/arm64/crypto/sm3-ce.ko.zst:
+kernel/arch/arm64/crypto/sm4-ce-cipher.ko.zst: kernel/crypto/sm4.ko.zst
+kernel/arch/arm64/crypto/aes-neon-blk.ko.zst:
+kernel/arch/arm64/crypto/aes-neon-bs.ko.zst: kernel/arch/arm64/crypto/aes-neon-blk.ko.zst
+kernel/mm/zsmalloc.ko.zst:
+kernel/fs/nfs_common/nfs_localio.ko.zst: kernel/net/sunrpc/sunrpc.ko.zst
+kernel/fs/nfs_common/grace.ko.zst:
+kernel/fs/nls/nls_ucs2_utils.ko.zst:
+kernel/fs/binfmt_misc.ko.zst:
+kernel/fs/netfs/netfs.ko.zst:
+kernel/fs/isofs/isofs.ko.zst:
+kernel/fs/nfs/nfs.ko.zst: kernel/fs/lockd/lockd.ko.zst kernel/fs/nfs_common/grace.ko.zst kernel/fs/nfs_common/nfs_localio.ko.zst kernel/net/sunrpc/sunrpc.ko.zst
+kernel/fs/nfs/nfsv3.ko.zst: kernel/fs/nfs/nfs.ko.zst kernel/fs/lockd/lockd.ko.zst kernel/fs/nfs_common/grace.ko.zst kernel/fs/nfs_common/nfs_localio.ko.zst kernel/net/sunrpc/sunrpc.ko.zst
+kernel/fs/nfs/nfsv4.ko.zst: kernel/net/dns_resolver/dns_resolver.ko.zst kernel/fs/nfs/nfs.ko.zst kernel/fs/lockd/lockd.ko.zst kernel/fs/nfs_common/grace.ko.zst kernel/fs/nfs_common/nfs_localio.ko.zst kernel/net/sunrpc/sunrpc.ko.zst
+kernel/fs/nfs/filelayout/nfs_layout_nfsv41_files.ko.zst: kernel/fs/nfs/nfsv4.ko.zst kernel/net/dns_resolver/dns_resolver.ko.zst kernel/fs/nfs/nfs.ko.zst kernel/fs/lockd/lockd.ko.zst kernel/fs/nfs_common/grace.ko.zst kernel/fs/nfs_common/nfs_localio.ko.zst kernel/net/sunrpc/sunrpc.ko.zst
+kernel/fs/nfs/blocklayout/blocklayoutdriver.ko.zst: kernel/fs/nfs/nfsv4.ko.zst kernel/net/dns_resolver/dns_resolver.ko.zst kernel/fs/nfs/nfs.ko.zst kernel/fs/lockd/lockd.ko.zst kernel/fs/nfs_common/grace.ko.zst kernel/fs/nfs_common/nfs_localio.ko.zst kernel/net/sunrpc/sunrpc.ko.zst
+kernel/fs/nfs/flexfilelayout/nfs_layout_flexfiles.ko.zst: kernel/fs/nfs/nfsv4.ko.zst kernel/net/dns_resolver/dns_resolver.ko.zst kernel/fs/nfs/nfs.ko.zst kernel/fs/lockd/lockd.ko.zst kernel/fs/nfs_common/grace.ko.zst kernel/fs/nfs_common/nfs_localio.ko.zst kernel/net/sunrpc/sunrpc.ko.zst
+kernel/fs/nfsd/nfsd.ko.zst: kernel/net/sunrpc/auth_gss/auth_rpcgss.ko.zst kernel/fs/lockd/lockd.ko.zst kernel/fs/nfs_common/grace.ko.zst kernel/fs/nfs_common/nfs_localio.ko.zst kernel/net/sunrpc/sunrpc.ko.zst
+kernel/fs/lockd/lockd.ko.zst: kernel/fs/nfs_common/grace.ko.zst kernel/net/sunrpc/sunrpc.ko.zst
+kernel/fs/smb/common/cifs_md4.ko.zst:
+kernel/fs/smb/client/cifs.ko.zst: kernel/fs/nls/nls_ucs2_utils.ko.zst kernel/lib/crypto/libarc4.ko.zst kernel/fs/netfs/netfs.ko.zst kernel/fs/smb/common/cifs_md4.ko.zst kernel/net/dns_resolver/dns_resolver.ko.zst
+kernel/fs/ntfs3/ntfs3.ko.zst:
+kernel/fs/fuse/fuse.ko.zst:
+kernel/fs/fuse/cuse.ko.zst: kernel/fs/fuse/fuse.ko.zst
+kernel/fs/overlayfs/overlay.ko.zst:
+kernel/fs/udf/udf.ko.zst: kernel/lib/crc/crc-itu-t.ko.zst
+kernel/fs/efivarfs/efivarfs.ko.zst:
+kernel/crypto/asymmetric_keys/pkcs8_key_parser.ko.zst:
+kernel/crypto/cmac.ko.zst:
+kernel/crypto/md4.ko.zst:
+kernel/crypto/cts.ko.zst:
+kernel/crypto/ctr.ko.zst:
+kernel/crypto/gcm.ko.zst:
+kernel/crypto/ccm.ko.zst:
+kernel/crypto/chacha20poly1305.ko.zst: kernel/lib/crypto/libpoly1305.ko.zst
+kernel/crypto/des_generic.ko.zst: kernel/lib/crypto/libdes.ko.zst
+kernel/crypto/sm4.ko.zst:
+kernel/crypto/camellia_generic.ko.zst:
+kernel/crypto/chacha.ko.zst: kernel/lib/crypto/libchacha.ko.zst
+kernel/crypto/michael_mic.ko.zst:
+kernel/crypto/krb5enc.ko.zst:
+kernel/crypto/ghash-generic.ko.zst:
+kernel/crypto/af_alg.ko.zst:
+kernel/crypto/algif_hash.ko.zst: kernel/crypto/af_alg.ko.zst
+kernel/crypto/algif_skcipher.ko.zst: kernel/crypto/af_alg.ko.zst
+kernel/crypto/algif_rng.ko.zst: kernel/crypto/af_alg.ko.zst
+kernel/crypto/algif_aead.ko.zst: kernel/crypto/af_alg.ko.zst
+kernel/crypto/ecc.ko.zst:
+kernel/crypto/ecdh_generic.ko.zst: kernel/crypto/ecc.ko.zst
+kernel/crypto/krb5/krb5.ko.zst:
+kernel/lib/crc/crc-ccitt.ko.zst:
+kernel/lib/crc/crc-itu-t.ko.zst:
+kernel/lib/crypto/libarc4.ko.zst:
+kernel/lib/crypto/libchacha.ko.zst:
+kernel/lib/crypto/libchacha20poly1305.ko.zst: kernel/lib/crypto/libchacha.ko.zst kernel/lib/crypto/libpoly1305.ko.zst
+kernel/lib/crypto/libcurve25519.ko.zst:
+kernel/lib/crypto/libdes.ko.zst:
+kernel/lib/crypto/libpoly1305.ko.zst:
+kernel/lib/crypto/libsm3.ko.zst:
+kernel/lib/lz4/lz4hc_compress.ko.zst:
+kernel/drivers/phy/qualcomm/phy-qcom-m31.ko.zst:
+kernel/drivers/phy/qualcomm/phy-qcom-m31-eusb2.ko.zst:
+kernel/drivers/phy/phy-snps-eusb2.ko.zst:
+kernel/drivers/pinctrl/qcom/pinctrl-sdm660-lpass-lpi.ko.zst: kernel/drivers/pinctrl/qcom/pinctrl-lpass-lpi.ko.zst
+kernel/drivers/pinctrl/qcom/pinctrl-lpass-lpi.ko.zst:
+kernel/drivers/gpio/gpio-line-mux.ko.zst: kernel/drivers/mux/mux-core.ko.zst
+kernel/drivers/gpio/gpio-shared-proxy.ko.zst:
+kernel/drivers/pwm/pwm-clk.ko.zst:
+kernel/drivers/pwm/pwm-gpio.ko.zst:
+kernel/drivers/leds/trigger/ledtrig-pattern.ko.zst:
+kernel/drivers/leds/led-class-flash.ko.zst:
+kernel/drivers/leds/led-class-multicolor.ko.zst:
+kernel/drivers/leds/flash/leds-qcom-flash.ko.zst: kernel/drivers/leds/led-class-flash.ko.zst
+kernel/drivers/leds/rgb/leds-qcom-lpg.ko.zst: kernel/drivers/leds/led-class-multicolor.ko.zst
+kernel/drivers/soc/qcom/qcom_aoss.ko.zst:
+kernel/drivers/soc/qcom/qcom-geni-se.ko.zst:
+kernel/drivers/soc/qcom/qcom_gsbi.ko.zst:
+kernel/drivers/soc/qcom/ocmem.ko.zst:
+kernel/drivers/soc/qcom/qcom_pd_mapper.ko.zst: kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/soc/qcom/pdr_interface.ko.zst: kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst: kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/soc/qcom/pmic_glink.ko.zst: kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/soc/qcom/pmic_glink_altmode.ko.zst: kernel/drivers/gpu/drm/bridge/aux-hpd-bridge.ko.zst kernel/drivers/soc/qcom/pmic_glink.ko.zst kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/soc/qcom/qmi_helpers.ko.zst:
+kernel/drivers/soc/qcom/ramp_controller.ko.zst:
+kernel/drivers/soc/qcom/rmtfs_mem.ko.zst:
+kernel/drivers/soc/qcom/rpm_master_stats.ko.zst:
+kernel/drivers/soc/qcom/qcom_sns_reg.ko.zst: kernel/drivers/remoteproc/qcom_common.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/soc/qcom/spm.ko.zst:
+kernel/drivers/soc/qcom/qcom_stats.ko.zst: kernel/drivers/soc/qcom/qcom_aoss.ko.zst
+kernel/drivers/soc/qcom/wcnss_ctrl.ko.zst:
+kernel/drivers/soc/qcom/apr.ko.zst: kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/soc/qcom/llcc-qcom.ko.zst:
+kernel/drivers/soc/qcom/icc-bwmon.ko.zst:
+kernel/drivers/soc/qcom/ubwc_config.ko.zst:
+kernel/drivers/pmdomain/qcom/cpr.ko.zst:
+kernel/drivers/regulator/qcom-labibb-regulator.ko.zst:
+kernel/drivers/regulator/qcom-refgen-regulator.ko.zst:
+kernel/drivers/tty/rpmsg_tty.ko.zst:
+kernel/drivers/char/hw_random/rng-core.ko.zst:
+kernel/drivers/char/hw_random/arm_smccc_trng.ko.zst: kernel/drivers/char/hw_random/rng-core.ko.zst
+kernel/drivers/gpu/drm/display/drm_dp_aux_bus.ko.zst:
+kernel/drivers/gpu/drm/display/drm_display_helper.ko.zst: kernel/drivers/media/cec/core/cec.ko.zst
+kernel/drivers/gpu/drm/panel/panel-boe-bv045fhm-l00.ko.zst:
+kernel/drivers/gpu/drm/panel/panel-boe-td4320.ko.zst:
+kernel/drivers/gpu/drm/panel/panel-ft8716u.ko.zst:
+kernel/drivers/gpu/drm/panel/panel-novatek-nt36672a.ko.zst:
+kernel/drivers/gpu/drm/panel/panel-novatek-nt51021.ko.zst:
+kernel/drivers/gpu/drm/panel/panel-samsung-ams601nt12.ko.zst:
+kernel/drivers/gpu/drm/panel/panel-synaptics-td4310.ko.zst:
+kernel/drivers/gpu/drm/panel/panel-tianma-td4310.ko.zst:
+kernel/drivers/gpu/drm/panel/panel-truly-td4322.ko.zst:
+kernel/drivers/gpu/drm/bridge/aux-hpd-bridge.ko.zst:
+kernel/drivers/gpu/drm/drm_exec.ko.zst:
+kernel/drivers/gpu/drm/drm_gpuvm.ko.zst: kernel/drivers/gpu/drm/drm_exec.ko.zst
+kernel/drivers/gpu/drm/scheduler/gpu-sched.ko.zst:
+kernel/drivers/gpu/drm/msm/msm.ko.zst: kernel/drivers/soc/qcom/ubwc_config.ko.zst kernel/drivers/gpu/drm/display/drm_dp_aux_bus.ko.zst kernel/drivers/soc/qcom/llcc-qcom.ko.zst kernel/drivers/soc/qcom/ocmem.ko.zst kernel/drivers/gpu/drm/drm_gpuvm.ko.zst kernel/drivers/gpu/drm/drm_exec.ko.zst kernel/drivers/gpu/drm/scheduler/gpu-sched.ko.zst kernel/drivers/gpu/drm/display/drm_display_helper.ko.zst kernel/drivers/media/cec/core/cec.ko.zst kernel/drivers/soc/qcom/qcom_aoss.ko.zst
+kernel/drivers/block/virtio_blk.ko.zst:
+kernel/drivers/block/zram/zram.ko.zst: kernel/lib/lz4/lz4hc_compress.ko.zst kernel/mm/zsmalloc.ko.zst
+kernel/drivers/misc/qcom-coincell.ko.zst:
+kernel/drivers/misc/fastrpc.ko.zst:
+kernel/drivers/misc/ntsync.ko.zst:
+kernel/drivers/nfc/s3fwrn5/s3fwrn5.ko.zst: kernel/net/nfc/nci/nci.ko.zst kernel/net/nfc/nfc.ko.zst kernel/net/rfkill/rfkill.ko.zst
+kernel/drivers/nfc/s3fwrn5/s3fwrn5_i2c.ko.zst: kernel/drivers/nfc/s3fwrn5/s3fwrn5.ko.zst kernel/net/nfc/nci/nci.ko.zst kernel/net/nfc/nfc.ko.zst kernel/net/rfkill/rfkill.ko.zst
+kernel/drivers/spi/spidev.ko.zst:
+kernel/drivers/spi/spi-bitbang.ko.zst:
+kernel/drivers/net/phy/mdio-bus.ko.zst:
+kernel/drivers/net/phy/phylink.ko.zst: kernel/drivers/net/phy/libphy.ko.zst kernel/drivers/net/phy/mdio-bus.ko.zst
+kernel/drivers/net/phy/libphy.ko.zst: kernel/drivers/net/phy/mdio-bus.ko.zst
+kernel/drivers/net/phy/mdio_devres.ko.zst: kernel/drivers/net/mdio/of_mdio.ko.zst kernel/drivers/net/phy/fixed_phy.ko.zst kernel/drivers/net/mdio/fwnode_mdio.ko.zst kernel/drivers/net/phy/libphy.ko.zst kernel/drivers/net/phy/mdio-bus.ko.zst
+kernel/drivers/net/phy/ax88796b.ko.zst: kernel/drivers/net/phy/libphy.ko.zst kernel/drivers/net/phy/mdio-bus.ko.zst
+kernel/drivers/net/phy/fixed_phy.ko.zst: kernel/drivers/net/phy/libphy.ko.zst kernel/drivers/net/phy/mdio-bus.ko.zst
+kernel/drivers/net/phy/microchip.ko.zst: kernel/drivers/net/phy/libphy.ko.zst kernel/drivers/net/phy/mdio-bus.ko.zst
+kernel/drivers/net/phy/smsc.ko.zst: kernel/drivers/net/phy/libphy.ko.zst kernel/drivers/net/phy/mdio-bus.ko.zst
+kernel/drivers/net/mdio/fwnode_mdio.ko.zst: kernel/drivers/net/phy/libphy.ko.zst kernel/drivers/net/phy/mdio-bus.ko.zst
+kernel/drivers/net/mdio/of_mdio.ko.zst: kernel/drivers/net/phy/fixed_phy.ko.zst kernel/drivers/net/mdio/fwnode_mdio.ko.zst kernel/drivers/net/phy/libphy.ko.zst kernel/drivers/net/phy/mdio-bus.ko.zst
+kernel/drivers/net/ethernet/qualcomm/rmnet/rmnet.ko.zst:
+kernel/drivers/net/wireless/ath/ath10k/ath10k_core.ko.zst: kernel/drivers/net/wireless/ath/ath.ko.zst kernel/net/mac80211/mac80211.ko.zst kernel/net/wireless/cfg80211.ko.zst kernel/net/rfkill/rfkill.ko.zst kernel/lib/crypto/libarc4.ko.zst
+kernel/drivers/net/wireless/ath/ath10k/ath10k_snoc.ko.zst: kernel/drivers/net/wireless/ath/ath10k/ath10k_core.ko.zst kernel/drivers/net/wireless/ath/ath.ko.zst kernel/net/mac80211/mac80211.ko.zst kernel/net/wireless/cfg80211.ko.zst kernel/net/rfkill/rfkill.ko.zst kernel/drivers/remoteproc/qcom_common.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst kernel/lib/crypto/libarc4.ko.zst
+kernel/drivers/net/wireless/ath/ath.ko.zst: kernel/net/wireless/cfg80211.ko.zst kernel/net/rfkill/rfkill.ko.zst
+kernel/drivers/net/usb/catc.ko.zst:
+kernel/drivers/net/usb/kaweth.ko.zst:
+kernel/drivers/net/usb/pegasus.ko.zst: kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/rtl8150.ko.zst:
+kernel/drivers/net/usb/r8152.ko.zst: kernel/drivers/net/mii.ko.zst kernel/drivers/net/phy/libphy.ko.zst kernel/drivers/net/phy/mdio-bus.ko.zst
+kernel/drivers/net/usb/hso.ko.zst: kernel/net/rfkill/rfkill.ko.zst
+kernel/drivers/net/usb/lan78xx.ko.zst: kernel/net/core/selftests.ko.zst kernel/drivers/net/phy/phylink.ko.zst kernel/drivers/net/mdio/of_mdio.ko.zst kernel/drivers/net/phy/fixed_phy.ko.zst kernel/drivers/net/mdio/fwnode_mdio.ko.zst kernel/drivers/net/phy/libphy.ko.zst kernel/drivers/net/phy/mdio-bus.ko.zst
+kernel/drivers/net/usb/asix.ko.zst: kernel/drivers/net/usb/usbnet.ko.zst kernel/net/core/selftests.ko.zst kernel/drivers/net/phy/phylink.ko.zst kernel/drivers/net/mii.ko.zst kernel/drivers/net/phy/libphy.ko.zst kernel/drivers/net/phy/mdio-bus.ko.zst
+kernel/drivers/net/usb/ax88179_178a.ko.zst: kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/cdc_ether.ko.zst: kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/dm9601.ko.zst: kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/sr9700.ko.zst: kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/sr9800.ko.zst: kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/smsc75xx.ko.zst: kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/smsc95xx.ko.zst: kernel/drivers/net/usb/usbnet.ko.zst kernel/net/core/selftests.ko.zst kernel/drivers/net/mii.ko.zst kernel/drivers/net/phy/libphy.ko.zst kernel/drivers/net/phy/mdio-bus.ko.zst
+kernel/drivers/net/usb/gl620a.ko.zst: kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/net1080.ko.zst: kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/plusb.ko.zst: kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/rndis_host.ko.zst: kernel/drivers/net/usb/cdc_ether.ko.zst kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/cdc_subset.ko.zst: kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/zaurus.ko.zst: kernel/drivers/net/usb/cdc_ether.ko.zst kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/mcs7830.ko.zst: kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/usbnet.ko.zst: kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/int51x1.ko.zst: kernel/drivers/net/usb/cdc_ether.ko.zst kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/kalmia.ko.zst: kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/ipheth.ko.zst:
+kernel/drivers/net/usb/sierra_net.ko.zst: kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/cx82310_eth.ko.zst: kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/cdc_ncm.ko.zst: kernel/drivers/net/usb/cdc_ether.ko.zst kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/huawei_cdc_ncm.ko.zst: kernel/drivers/usb/class/cdc-wdm.ko.zst kernel/drivers/net/usb/cdc_ncm.ko.zst kernel/drivers/net/usb/cdc_ether.ko.zst kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/lg-vl600.ko.zst: kernel/drivers/net/usb/cdc_ether.ko.zst kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/qmi_wwan.ko.zst: kernel/drivers/usb/class/cdc-wdm.ko.zst kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/cdc_mbim.ko.zst: kernel/drivers/usb/class/cdc-wdm.ko.zst kernel/drivers/net/usb/cdc_ncm.ko.zst kernel/drivers/net/usb/cdc_ether.ko.zst kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/ch9200.ko.zst: kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/aqc111.ko.zst: kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst
+kernel/drivers/net/usb/r8153_ecm.ko.zst: kernel/drivers/net/usb/r8152.ko.zst kernel/drivers/net/usb/cdc_ether.ko.zst kernel/drivers/net/usb/usbnet.ko.zst kernel/drivers/net/mii.ko.zst kernel/drivers/net/phy/libphy.ko.zst kernel/drivers/net/phy/mdio-bus.ko.zst
+kernel/drivers/net/bonding/bonding.ko.zst: kernel/net/ipv6/ipv6.ko.zst
+kernel/drivers/net/ipvlan/ipvlan.ko.zst: kernel/net/ipv6/ipv6.ko.zst
+kernel/drivers/net/dummy.ko.zst:
+kernel/drivers/net/wireguard/wireguard.ko.zst: kernel/lib/crypto/libcurve25519.ko.zst kernel/lib/crypto/libchacha20poly1305.ko.zst kernel/net/ipv6/ip6_udp_tunnel.ko.zst kernel/net/ipv4/udp_tunnel.ko.zst kernel/net/ipv6/ipv6.ko.zst kernel/lib/crypto/libchacha.ko.zst kernel/lib/crypto/libpoly1305.ko.zst
+kernel/drivers/net/ovpn/ovpn.ko.zst: kernel/net/ipv6/ip6_udp_tunnel.ko.zst kernel/net/ipv4/udp_tunnel.ko.zst kernel/net/ipv6/ipv6.ko.zst
+kernel/drivers/net/macvlan.ko.zst:
+kernel/drivers/net/macvtap.ko.zst: kernel/drivers/net/macvlan.ko.zst kernel/drivers/net/tap.ko.zst
+kernel/drivers/net/mii.ko.zst:
+kernel/drivers/net/tun.ko.zst:
+kernel/drivers/net/tap.ko.zst:
+kernel/drivers/net/veth.ko.zst:
+kernel/drivers/net/virtio_net.ko.zst: kernel/drivers/net/net_failover.ko.zst kernel/net/core/failover.ko.zst
+kernel/drivers/net/vxlan/vxlan.ko.zst: kernel/net/ipv6/ip6_udp_tunnel.ko.zst kernel/net/ipv4/udp_tunnel.ko.zst
+kernel/drivers/net/nlmon.ko.zst:
+kernel/drivers/net/ipa/ipa.ko.zst: kernel/drivers/soc/qcom/qcom_aoss.ko.zst kernel/drivers/remoteproc/qcom_common.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/net/ppp/ppp_generic.ko.zst: kernel/drivers/net/slip/slhc.ko.zst
+kernel/drivers/net/ppp/ppp_async.ko.zst: kernel/lib/crc/crc-ccitt.ko.zst kernel/drivers/net/ppp/ppp_generic.ko.zst kernel/drivers/net/slip/slhc.ko.zst
+kernel/drivers/net/ppp/bsd_comp.ko.zst: kernel/drivers/net/ppp/ppp_generic.ko.zst kernel/drivers/net/slip/slhc.ko.zst
+kernel/drivers/net/ppp/ppp_deflate.ko.zst: kernel/drivers/net/ppp/ppp_generic.ko.zst kernel/drivers/net/slip/slhc.ko.zst
+kernel/drivers/net/ppp/ppp_synctty.ko.zst: kernel/drivers/net/ppp/ppp_generic.ko.zst kernel/drivers/net/slip/slhc.ko.zst
+kernel/drivers/net/ppp/pppox.ko.zst: kernel/drivers/net/ppp/ppp_generic.ko.zst kernel/drivers/net/slip/slhc.ko.zst
+kernel/drivers/net/ppp/pppoe.ko.zst: kernel/drivers/net/ppp/pppox.ko.zst kernel/drivers/net/ppp/ppp_generic.ko.zst kernel/drivers/net/slip/slhc.ko.zst
+kernel/drivers/net/slip/slhc.ko.zst:
+kernel/drivers/net/net_failover.ko.zst: kernel/net/core/failover.ko.zst
+kernel/drivers/usb/common/usb-conn-gpio.ko.zst:
+kernel/drivers/usb/common/usb-otg-fsm.ko.zst:
+kernel/drivers/usb/dwc3/dwc3-generic-plat.ko.zst:
+kernel/drivers/usb/storage/uas.ko.zst:
+kernel/drivers/usb/misc/qcom_eud.ko.zst:
+kernel/drivers/usb/typec/ucsi/ucsi_glink.ko.zst: kernel/drivers/soc/qcom/pmic_glink.ko.zst kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/usb/mon/usbmon.ko.zst:
+kernel/drivers/usb/class/cdc-acm.ko.zst:
+kernel/drivers/usb/class/usblp.ko.zst:
+kernel/drivers/usb/class/cdc-wdm.ko.zst:
+kernel/drivers/usb/usbip/usbip-core.ko.zst:
+kernel/drivers/usb/usbip/vhci-hcd.ko.zst: kernel/drivers/usb/usbip/usbip-core.ko.zst
+kernel/drivers/usb/usbip/usbip-host.ko.zst: kernel/drivers/usb/usbip/usbip-core.ko.zst
+kernel/drivers/input/keyboard/stmpe-keypad.ko.zst: kernel/drivers/input/matrix-keymap.ko.zst
+kernel/drivers/input/mouse/synaptics_i2c.ko.zst:
+kernel/drivers/input/mouse/synaptics_usb.ko.zst:
+kernel/drivers/input/joystick/xpad.ko.zst:
+kernel/drivers/input/touchscreen/edt-ft5x06.ko.zst:
+kernel/drivers/input/touchscreen/goodix_ts.ko.zst:
+kernel/drivers/input/touchscreen/novatek-nvt-ts.ko.zst:
+kernel/drivers/input/misc/qcom-spmi-haptics.ko.zst:
+kernel/drivers/input/matrix-keymap.ko.zst:
+kernel/drivers/input/vivaldi-fmap.ko.zst:
+kernel/drivers/input/rmi4/rmi_core.ko.zst:
+kernel/drivers/input/rmi4/rmi_i2c.ko.zst: kernel/drivers/input/rmi4/rmi_core.ko.zst
+kernel/drivers/input/rmi4/rmi_spi.ko.zst: kernel/drivers/input/rmi4/rmi_core.ko.zst
+kernel/drivers/input/rmi4/rmi_smbus.ko.zst: kernel/drivers/input/rmi4/rmi_core.ko.zst
+kernel/drivers/rtc/rtc-hid-sensor-time.ko.zst: kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko.zst kernel/drivers/hid/hid-sensor-hub.ko.zst
+kernel/drivers/media/cec/core/cec.ko.zst:
+kernel/drivers/pps/generators/pps_gen_core.ko.zst:
+kernel/drivers/power/sequencing/pwrseq-qcom-wcn.ko.zst:
+kernel/drivers/power/sequencing/pwrseq-pcie-m2.ko.zst:
+kernel/drivers/power/supply/qcom_battmgr.ko.zst: kernel/drivers/soc/qcom/pmic_glink.ko.zst kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/power/supply/rt5033_battery.ko.zst:
+kernel/drivers/power/supply/qcom_smbb.ko.zst:
+kernel/drivers/power/supply/pmi8998_fg.ko.zst:
+kernel/drivers/power/supply/qcom_smbx.ko.zst: kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/thermal/qcom/qcom-spmi-adc-tm5.ko.zst: kernel/drivers/iio/adc/qcom-vadc-common.ko.zst kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/thermal/qcom/qcom-spmi-temp-alarm.ko.zst: kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/thermal/qcom/lmh.ko.zst:
+kernel/drivers/thermal/thermal-generic-adc.ko.zst: kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/watchdog/qcom-wdt.ko.zst:
+kernel/drivers/md/dm-bufio.ko.zst:
+kernel/drivers/md/dm-bio-prison.ko.zst:
+kernel/drivers/md/persistent-data/dm-persistent-data.ko.zst: kernel/drivers/md/dm-bufio.ko.zst
+kernel/drivers/md/dm-raid.ko.zst:
+kernel/drivers/md/dm-thin-pool.ko.zst: kernel/drivers/md/persistent-data/dm-persistent-data.ko.zst kernel/drivers/md/dm-bufio.ko.zst kernel/drivers/md/dm-bio-prison.ko.zst
+kernel/drivers/md/dm-verity.ko.zst: kernel/drivers/md/dm-bufio.ko.zst
+kernel/drivers/md/dm-integrity.ko.zst: kernel/drivers/md/dm-bufio.ko.zst
+kernel/drivers/cpufreq/cpufreq_powersave.ko.zst:
+kernel/drivers/cpufreq/cpufreq_userspace.ko.zst:
+kernel/drivers/cpufreq/cpufreq_ondemand.ko.zst:
+kernel/drivers/cpufreq/cpufreq_conservative.ko.zst:
+kernel/drivers/cpufreq/qcom-cpufreq-hw.ko.zst:
+kernel/drivers/cpufreq/qcom-cpufreq-nvmem.ko.zst:
+kernel/drivers/crypto/qce/qcrypto.ko.zst: kernel/lib/crypto/libdes.ko.zst
+kernel/drivers/crypto/qcom-rng.ko.zst: kernel/drivers/char/hw_random/rng-core.ko.zst
+kernel/drivers/hid/uhid.ko.zst:
+kernel/drivers/hid/hid-a4tech.ko.zst:
+kernel/drivers/hid/hid-accutouch.ko.zst:
+kernel/drivers/hid/hid-alps.ko.zst:
+kernel/drivers/hid/hid-axff.ko.zst:
+kernel/drivers/hid/hid-apple.ko.zst:
+kernel/drivers/hid/hid-appleir.ko.zst:
+kernel/drivers/hid/hid-creative-sb0540.ko.zst:
+kernel/drivers/hid/hid-aureal.ko.zst:
+kernel/drivers/hid/hid-belkin.ko.zst:
+kernel/drivers/hid/hid-betopff.ko.zst:
+kernel/drivers/hid/hid-bigbenff.ko.zst:
+kernel/drivers/hid/hid-cherry.ko.zst:
+kernel/drivers/hid/hid-chicony.ko.zst:
+kernel/drivers/hid/hid-cmedia.ko.zst:
+kernel/drivers/hid/hid-corsair.ko.zst:
+kernel/drivers/hid/hid-corsair-void.ko.zst:
+kernel/drivers/hid/hid-cougar.ko.zst:
+kernel/drivers/hid/hid-cp2112.ko.zst:
+kernel/drivers/hid/hid-cypress.ko.zst:
+kernel/drivers/hid/hid-dr.ko.zst:
+kernel/drivers/hid/hid-emsff.ko.zst:
+kernel/drivers/hid/hid-elan.ko.zst:
+kernel/drivers/hid/hid-elecom.ko.zst:
+kernel/drivers/hid/hid-elo.ko.zst:
+kernel/drivers/hid/hid-evision.ko.zst:
+kernel/drivers/hid/hid-ezkey.ko.zst:
+kernel/drivers/hid/hid-ft260.ko.zst:
+kernel/drivers/hid/hid-gembird.ko.zst:
+kernel/drivers/hid/hid-gfrm.ko.zst:
+kernel/drivers/hid/hid-glorious.ko.zst:
+kernel/drivers/hid/hid-vivaldi-common.ko.zst: kernel/drivers/input/vivaldi-fmap.ko.zst
+kernel/drivers/hid/hid-goodix-spi.ko.zst:
+kernel/drivers/hid/hid-google-stadiaff.ko.zst:
+kernel/drivers/hid/hid-vivaldi.ko.zst: kernel/drivers/hid/hid-vivaldi-common.ko.zst kernel/drivers/input/vivaldi-fmap.ko.zst
+kernel/drivers/hid/hid-gt683r.ko.zst:
+kernel/drivers/hid/hid-gyration.ko.zst:
+kernel/drivers/hid/hid-holtek-kbd.ko.zst:
+kernel/drivers/hid/hid-holtek-mouse.ko.zst:
+kernel/drivers/hid/hid-holtekff.ko.zst:
+kernel/drivers/hid/hid-icade.ko.zst:
+kernel/drivers/hid/hid-ite.ko.zst:
+kernel/drivers/hid/hid-jabra.ko.zst:
+kernel/drivers/hid/hid-kensington.ko.zst:
+kernel/drivers/hid/hid-keytouch.ko.zst:
+kernel/drivers/hid/hid-kye.ko.zst:
+kernel/drivers/hid/hid-lcpower.ko.zst:
+kernel/drivers/hid/hid-letsketch.ko.zst:
+kernel/drivers/hid/hid-logitech.ko.zst:
+kernel/drivers/hid/hid-lg-g15.ko.zst: kernel/drivers/leds/led-class-multicolor.ko.zst
+kernel/drivers/hid/hid-logitech-dj.ko.zst:
+kernel/drivers/hid/hid-logitech-hidpp.ko.zst:
+kernel/drivers/hid/hid-macally.ko.zst:
+kernel/drivers/hid/hid-magicmouse.ko.zst:
+kernel/drivers/hid/hid-maltron.ko.zst:
+kernel/drivers/hid/hid-mcp2221.ko.zst: kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/hid/hid-mf.ko.zst:
+kernel/drivers/hid/hid-megaworld.ko.zst:
+kernel/drivers/hid/hid-microsoft.ko.zst:
+kernel/drivers/hid/hid-monterey.ko.zst:
+kernel/drivers/hid/hid-multitouch.ko.zst:
+kernel/drivers/hid/hid-nintendo.ko.zst:
+kernel/drivers/hid/hid-nti.ko.zst:
+kernel/drivers/hid/hid-ntrig.ko.zst:
+kernel/drivers/hid/hid-nvidia-shield.ko.zst:
+kernel/drivers/hid/hid-ortek.ko.zst:
+kernel/drivers/hid/hid-prodikeys.ko.zst:
+kernel/drivers/hid/hid-pl.ko.zst:
+kernel/drivers/hid/hid-penmount.ko.zst:
+kernel/drivers/hid/hid-petalynx.ko.zst:
+kernel/drivers/hid/hid-picolcd.ko.zst:
+kernel/drivers/hid/hid-plantronics.ko.zst:
+kernel/drivers/hid/hid-playstation.ko.zst: kernel/drivers/leds/led-class-multicolor.ko.zst
+kernel/drivers/hid/hid-primax.ko.zst:
+kernel/drivers/hid/hid-pxrc.ko.zst:
+kernel/drivers/hid/hid-razer.ko.zst:
+kernel/drivers/hid/hid-retrode.ko.zst:
+kernel/drivers/hid/hid-roccat.ko.zst:
+kernel/drivers/hid/hid-roccat-common.ko.zst:
+kernel/drivers/hid/hid-roccat-arvo.ko.zst: kernel/drivers/hid/hid-roccat.ko.zst kernel/drivers/hid/hid-roccat-common.ko.zst
+kernel/drivers/hid/hid-roccat-isku.ko.zst: kernel/drivers/hid/hid-roccat.ko.zst kernel/drivers/hid/hid-roccat-common.ko.zst
+kernel/drivers/hid/hid-roccat-kone.ko.zst: kernel/drivers/hid/hid-roccat.ko.zst
+kernel/drivers/hid/hid-roccat-koneplus.ko.zst: kernel/drivers/hid/hid-roccat.ko.zst kernel/drivers/hid/hid-roccat-common.ko.zst
+kernel/drivers/hid/hid-roccat-konepure.ko.zst: kernel/drivers/hid/hid-roccat.ko.zst kernel/drivers/hid/hid-roccat-common.ko.zst
+kernel/drivers/hid/hid-roccat-kovaplus.ko.zst: kernel/drivers/hid/hid-roccat.ko.zst kernel/drivers/hid/hid-roccat-common.ko.zst
+kernel/drivers/hid/hid-roccat-lua.ko.zst: kernel/drivers/hid/hid-roccat-common.ko.zst
+kernel/drivers/hid/hid-roccat-pyra.ko.zst: kernel/drivers/hid/hid-roccat.ko.zst kernel/drivers/hid/hid-roccat-common.ko.zst
+kernel/drivers/hid/hid-roccat-ryos.ko.zst: kernel/drivers/hid/hid-roccat.ko.zst kernel/drivers/hid/hid-roccat-common.ko.zst
+kernel/drivers/hid/hid-roccat-savu.ko.zst: kernel/drivers/hid/hid-roccat.ko.zst kernel/drivers/hid/hid-roccat-common.ko.zst
+kernel/drivers/hid/hid-rmi.ko.zst: kernel/drivers/input/rmi4/rmi_core.ko.zst
+kernel/drivers/hid/hid-saitek.ko.zst:
+kernel/drivers/hid/hid-samsung.ko.zst:
+kernel/drivers/hid/hid-semitek.ko.zst:
+kernel/drivers/hid/hid-sigmamicro.ko.zst:
+kernel/drivers/hid/hid-sjoy.ko.zst:
+kernel/drivers/hid/hid-sony.ko.zst:
+kernel/drivers/hid/hid-speedlink.ko.zst:
+kernel/drivers/hid/hid-steam.ko.zst:
+kernel/drivers/hid/hid-steelseries.ko.zst:
+kernel/drivers/hid/hid-sunplus.ko.zst:
+kernel/drivers/hid/hid-gaff.ko.zst:
+kernel/drivers/hid/hid-tmff.ko.zst:
+kernel/drivers/hid/hid-thrustmaster.ko.zst:
+kernel/drivers/hid/hid-tivo.ko.zst:
+kernel/drivers/hid/hid-topseed.ko.zst:
+kernel/drivers/hid/hid-topre.ko.zst:
+kernel/drivers/hid/hid-twinhan.ko.zst:
+kernel/drivers/hid/hid-u2fzero.ko.zst: kernel/drivers/char/hw_random/rng-core.ko.zst
+kernel/drivers/hid/hid-uclogic.ko.zst:
+kernel/drivers/hid/hid-udraw-ps3.ko.zst:
+kernel/drivers/hid/hid-led.ko.zst:
+kernel/drivers/hid/hid-xiaomi.ko.zst:
+kernel/drivers/hid/hid-xinmo.ko.zst:
+kernel/drivers/hid/hid-zpff.ko.zst:
+kernel/drivers/hid/hid-zydacron.ko.zst:
+kernel/drivers/hid/hid-viewsonic.ko.zst:
+kernel/drivers/hid/wacom.ko.zst:
+kernel/drivers/hid/hid-waltop.ko.zst:
+kernel/drivers/hid/hid-wiimote.ko.zst:
+kernel/drivers/hid/hid-winwing.ko.zst:
+kernel/drivers/hid/hid-sensor-hub.ko.zst:
+kernel/drivers/hid/hid-sensor-custom.ko.zst: kernel/drivers/hid/hid-sensor-hub.ko.zst
+kernel/drivers/hid/i2c-hid/i2c-hid.ko.zst:
+kernel/drivers/hid/i2c-hid/i2c-hid-of.ko.zst: kernel/drivers/hid/i2c-hid/i2c-hid.ko.zst
+kernel/drivers/hid/i2c-hid/i2c-hid-of-goodix.ko.zst: kernel/drivers/hid/i2c-hid/i2c-hid.ko.zst
+kernel/drivers/mailbox/qcom-ipcc.ko.zst:
+kernel/drivers/remoteproc/qcom_pil_info.ko.zst:
+kernel/drivers/remoteproc/qcom_common.ko.zst:
+kernel/drivers/remoteproc/qcom_q6v5.ko.zst: kernel/drivers/remoteproc/qcom_sysmon.ko.zst kernel/drivers/soc/qcom/qcom_aoss.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/remoteproc/qcom_q6v5_mss.ko.zst: kernel/drivers/remoteproc/qcom_pil_info.ko.zst kernel/drivers/remoteproc/qcom_q6v5.ko.zst kernel/drivers/remoteproc/qcom_sysmon.ko.zst kernel/drivers/soc/qcom/qcom_aoss.ko.zst kernel/drivers/remoteproc/qcom_common.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/remoteproc/qcom_q6v5_pas.ko.zst: kernel/drivers/remoteproc/qcom_pil_info.ko.zst kernel/drivers/remoteproc/qcom_q6v5.ko.zst kernel/drivers/remoteproc/qcom_sysmon.ko.zst kernel/drivers/soc/qcom/qcom_aoss.ko.zst kernel/drivers/remoteproc/qcom_common.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/remoteproc/qcom_q6v5_wcss.ko.zst: kernel/drivers/remoteproc/qcom_pil_info.ko.zst kernel/drivers/remoteproc/qcom_q6v5.ko.zst kernel/drivers/remoteproc/qcom_sysmon.ko.zst kernel/drivers/soc/qcom/qcom_aoss.ko.zst kernel/drivers/remoteproc/qcom_common.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/remoteproc/qcom_sysmon.ko.zst: kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/remoteproc/qcom_wcnss_pil.ko.zst: kernel/drivers/remoteproc/qcom_pil_info.ko.zst kernel/drivers/remoteproc/qcom_sysmon.ko.zst kernel/drivers/remoteproc/qcom_common.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/nvmem/nvmem_sec_qfprom.ko.zst:
+kernel/drivers/slimbus/slimbus.ko.zst:
+kernel/drivers/slimbus/slim-qcom-ngd-ctrl.ko.zst: kernel/drivers/slimbus/slimbus.ko.zst kernel/drivers/remoteproc/qcom_common.ko.zst kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/bluetooth/hci_uart.ko.zst: kernel/drivers/bluetooth/btqca.ko.zst kernel/drivers/bluetooth/btrtl.ko.zst kernel/drivers/bluetooth/btintel.ko.zst kernel/drivers/bluetooth/btbcm.ko.zst kernel/net/bluetooth/bluetooth.ko.zst kernel/crypto/ecdh_generic.ko.zst kernel/crypto/ecc.ko.zst kernel/lib/crc/crc-ccitt.ko.zst kernel/net/rfkill/rfkill.ko.zst
+kernel/drivers/bluetooth/btusb.ko.zst: kernel/drivers/bluetooth/btrtl.ko.zst kernel/drivers/bluetooth/btintel.ko.zst kernel/drivers/bluetooth/btbcm.ko.zst kernel/net/bluetooth/bluetooth.ko.zst kernel/crypto/ecdh_generic.ko.zst kernel/crypto/ecc.ko.zst kernel/net/rfkill/rfkill.ko.zst
+kernel/drivers/bluetooth/btsdio.ko.zst: kernel/net/bluetooth/bluetooth.ko.zst kernel/crypto/ecdh_generic.ko.zst kernel/crypto/ecc.ko.zst kernel/net/rfkill/rfkill.ko.zst
+kernel/drivers/bluetooth/btintel.ko.zst: kernel/net/bluetooth/bluetooth.ko.zst kernel/crypto/ecdh_generic.ko.zst kernel/crypto/ecc.ko.zst kernel/net/rfkill/rfkill.ko.zst
+kernel/drivers/bluetooth/ath3k.ko.zst: kernel/net/bluetooth/bluetooth.ko.zst kernel/crypto/ecdh_generic.ko.zst kernel/crypto/ecc.ko.zst kernel/net/rfkill/rfkill.ko.zst
+kernel/drivers/bluetooth/btqcomsmd.ko.zst: kernel/drivers/bluetooth/btqca.ko.zst kernel/drivers/soc/qcom/wcnss_ctrl.ko.zst kernel/net/bluetooth/bluetooth.ko.zst kernel/crypto/ecdh_generic.ko.zst kernel/crypto/ecc.ko.zst kernel/net/rfkill/rfkill.ko.zst
+kernel/drivers/bluetooth/btbcm.ko.zst: kernel/net/bluetooth/bluetooth.ko.zst kernel/crypto/ecdh_generic.ko.zst kernel/crypto/ecc.ko.zst kernel/net/rfkill/rfkill.ko.zst
+kernel/drivers/bluetooth/btrtl.ko.zst: kernel/net/bluetooth/bluetooth.ko.zst kernel/crypto/ecdh_generic.ko.zst kernel/crypto/ecc.ko.zst kernel/net/rfkill/rfkill.ko.zst
+kernel/drivers/bluetooth/btqca.ko.zst: kernel/net/bluetooth/bluetooth.ko.zst kernel/crypto/ecdh_generic.ko.zst kernel/crypto/ecc.ko.zst kernel/net/rfkill/rfkill.ko.zst
+kernel/drivers/bluetooth/hci_nokia.ko.zst: kernel/drivers/bluetooth/hci_uart.ko.zst kernel/drivers/bluetooth/btqca.ko.zst kernel/drivers/bluetooth/btrtl.ko.zst kernel/drivers/bluetooth/btintel.ko.zst kernel/drivers/bluetooth/btbcm.ko.zst kernel/net/bluetooth/bluetooth.ko.zst kernel/crypto/ecdh_generic.ko.zst kernel/crypto/ecc.ko.zst kernel/lib/crc/crc-ccitt.ko.zst kernel/net/rfkill/rfkill.ko.zst
+kernel/drivers/soundwire/soundwire-bus.ko.zst:
+kernel/drivers/soundwire/soundwire-qcom.ko.zst: kernel/drivers/soundwire/soundwire-bus.ko.zst kernel/drivers/slimbus/slimbus.ko.zst
+kernel/drivers/iio/accel/bmc150-accel-core.ko.zst: kernel/drivers/iio/buffer/industrialio-triggered-buffer.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/accel/bmc150-accel-i2c.ko.zst: kernel/drivers/iio/accel/bmc150-accel-core.ko.zst kernel/drivers/iio/buffer/industrialio-triggered-buffer.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/accel/bmc150-accel-spi.ko.zst: kernel/drivers/iio/accel/bmc150-accel-core.ko.zst kernel/drivers/iio/buffer/industrialio-triggered-buffer.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/accel/hid-sensor-accel-3d.ko.zst: kernel/drivers/iio/common/hid-sensors/hid-sensor-trigger.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko.zst kernel/drivers/hid/hid-sensor-hub.ko.zst
+kernel/drivers/iio/accel/qcom_smgr_accel.ko.zst: kernel/drivers/iio/common/qcom_smgr/qcom_smgr.ko.zst kernel/net/qrtr/qrtr-smd.ko.zst kernel/net/qrtr/qrtr.ko.zst kernel/drivers/iio/common/qcom_smgr/qmi/sns_smgr.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/iio/adc/qcom-spmi-adc5.ko.zst: kernel/drivers/iio/adc/qcom-vadc-common.ko.zst kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/adc/qcom-spmi-iadc.ko.zst: kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/adc/qcom-spmi-rradc.ko.zst: kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/adc/qcom-spmi-vadc.ko.zst: kernel/drivers/iio/adc/qcom-vadc-common.ko.zst kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/adc/qcom-vadc-common.ko.zst:
+kernel/drivers/iio/buffer/industrialio-buffer-cb.ko.zst: kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/buffer/industrialio-buffer-dma.ko.zst: kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/buffer/industrialio-buffer-dmaengine.ko.zst: kernel/drivers/iio/buffer/industrialio-buffer-dma.ko.zst kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/buffer/industrialio-hw-consumer.ko.zst: kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/buffer/industrialio-triggered-buffer.ko.zst: kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/buffer/kfifo_buf.ko.zst: kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko.zst: kernel/drivers/hid/hid-sensor-hub.ko.zst
+kernel/drivers/iio/common/hid-sensors/hid-sensor-trigger.ko.zst: kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko.zst kernel/drivers/hid/hid-sensor-hub.ko.zst
+kernel/drivers/iio/common/qcom_smgr/qmi/sns_smgr.ko.zst:
+kernel/drivers/iio/common/qcom_smgr/qcom_smgr.ko.zst: kernel/net/qrtr/qrtr-smd.ko.zst kernel/net/qrtr/qrtr.ko.zst kernel/drivers/iio/common/qcom_smgr/qmi/sns_smgr.ko.zst kernel/drivers/iio/industrialio.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/iio/gyro/bmg160_core.ko.zst: kernel/drivers/iio/buffer/industrialio-triggered-buffer.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/gyro/bmg160_i2c.ko.zst: kernel/drivers/iio/gyro/bmg160_core.ko.zst kernel/drivers/iio/buffer/industrialio-triggered-buffer.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/gyro/bmg160_spi.ko.zst: kernel/drivers/iio/gyro/bmg160_core.ko.zst kernel/drivers/iio/buffer/industrialio-triggered-buffer.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/gyro/hid-sensor-gyro-3d.ko.zst: kernel/drivers/iio/common/hid-sensors/hid-sensor-trigger.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko.zst kernel/drivers/hid/hid-sensor-hub.ko.zst
+kernel/drivers/iio/gyro/qcom_smgr_gyro.ko.zst: kernel/drivers/iio/common/qcom_smgr/qcom_smgr.ko.zst kernel/net/qrtr/qrtr-smd.ko.zst kernel/net/qrtr/qrtr.ko.zst kernel/drivers/iio/common/qcom_smgr/qmi/sns_smgr.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/iio/humidity/hid-sensor-humidity.ko.zst: kernel/drivers/iio/common/hid-sensors/hid-sensor-trigger.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko.zst kernel/drivers/hid/hid-sensor-hub.ko.zst
+kernel/drivers/iio/light/hid-sensor-als.ko.zst: kernel/drivers/iio/common/hid-sensors/hid-sensor-trigger.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko.zst kernel/drivers/hid/hid-sensor-hub.ko.zst
+kernel/drivers/iio/light/hid-sensor-prox.ko.zst: kernel/drivers/iio/common/hid-sensors/hid-sensor-trigger.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko.zst kernel/drivers/hid/hid-sensor-hub.ko.zst
+kernel/drivers/iio/light/ltr501.ko.zst: kernel/drivers/iio/buffer/industrialio-triggered-buffer.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/magnetometer/bmc150_magn.ko.zst: kernel/drivers/iio/buffer/industrialio-triggered-buffer.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/magnetometer/bmc150_magn_i2c.ko.zst: kernel/drivers/iio/magnetometer/bmc150_magn.ko.zst kernel/drivers/iio/buffer/industrialio-triggered-buffer.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/magnetometer/hid-sensor-magn-3d.ko.zst: kernel/drivers/iio/common/hid-sensors/hid-sensor-trigger.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko.zst kernel/drivers/hid/hid-sensor-hub.ko.zst
+kernel/drivers/iio/magnetometer/qcom_smgr_mag.ko.zst: kernel/drivers/iio/common/qcom_smgr/qcom_smgr.ko.zst kernel/net/qrtr/qrtr-smd.ko.zst kernel/net/qrtr/qrtr.ko.zst kernel/drivers/iio/common/qcom_smgr/qmi/sns_smgr.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/iio/orientation/hid-sensor-incl-3d.ko.zst: kernel/drivers/iio/common/hid-sensors/hid-sensor-trigger.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko.zst kernel/drivers/hid/hid-sensor-hub.ko.zst
+kernel/drivers/iio/orientation/hid-sensor-rotation.ko.zst: kernel/drivers/iio/common/hid-sensors/hid-sensor-trigger.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko.zst kernel/drivers/hid/hid-sensor-hub.ko.zst
+kernel/drivers/iio/position/hid-sensor-custom-intel-hinge.ko.zst: kernel/drivers/iio/common/hid-sensors/hid-sensor-trigger.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko.zst kernel/drivers/hid/hid-sensor-hub.ko.zst
+kernel/drivers/iio/pressure/qcom_smgr_pressure.ko.zst: kernel/drivers/iio/common/qcom_smgr/qcom_smgr.ko.zst kernel/net/qrtr/qrtr-smd.ko.zst kernel/net/qrtr/qrtr.ko.zst kernel/drivers/iio/common/qcom_smgr/qmi/sns_smgr.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/iio/pressure/hid-sensor-press.ko.zst: kernel/drivers/iio/common/hid-sensors/hid-sensor-trigger.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko.zst kernel/drivers/hid/hid-sensor-hub.ko.zst
+kernel/drivers/iio/proximity/qcom_smgr_prox.ko.zst: kernel/drivers/iio/common/qcom_smgr/qcom_smgr.ko.zst kernel/net/qrtr/qrtr-smd.ko.zst kernel/net/qrtr/qrtr.ko.zst kernel/drivers/iio/common/qcom_smgr/qmi/sns_smgr.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/drivers/iio/temperature/hid-sensor-temperature.ko.zst: kernel/drivers/iio/common/hid-sensors/hid-sensor-trigger.ko.zst kernel/drivers/iio/buffer/kfifo_buf.ko.zst kernel/drivers/iio/industrialio.ko.zst kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko.zst kernel/drivers/hid/hid-sensor-hub.ko.zst
+kernel/drivers/iio/trigger/iio-trig-interrupt.ko.zst: kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/trigger/iio-trig-sysfs.ko.zst: kernel/drivers/iio/industrialio.ko.zst
+kernel/drivers/iio/industrialio.ko.zst:
+kernel/drivers/mux/mux-core.ko.zst:
+kernel/sound/core/snd-hwdep.ko.zst:
+kernel/sound/usb/qcom/snd-usb-audio-qmi.ko.zst: kernel/sound/soc/soc-usb.ko.zst kernel/sound/usb/snd-usb-audio.ko.zst kernel/sound/core/snd-hwdep.ko.zst kernel/sound/usb/snd-usbmidi-lib.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/sound/usb/snd-usb-audio.ko.zst: kernel/sound/core/snd-hwdep.ko.zst kernel/sound/usb/snd-usbmidi-lib.ko.zst
+kernel/sound/usb/snd-usbmidi-lib.ko.zst:
+kernel/sound/soc/codecs/snd-soc-msm8916-analog.ko.zst:
+kernel/sound/soc/codecs/snd-soc-msm8916-digital.ko.zst:
+kernel/sound/soc/codecs/snd-soc-hdmi-codec.ko.zst:
+kernel/sound/soc/codecs/snd-soc-tfa9891.ko.zst:
+kernel/sound/soc/qcom/snd-soc-lpass-cpu.ko.zst: kernel/sound/soc/qcom/snd-soc-lpass-platform.ko.zst
+kernel/sound/soc/qcom/snd-soc-lpass-platform.ko.zst:
+kernel/sound/soc/qcom/snd-soc-lpass-apq8016.ko.zst: kernel/sound/soc/qcom/snd-soc-lpass-cpu.ko.zst kernel/sound/soc/qcom/snd-soc-lpass-platform.ko.zst
+kernel/sound/soc/qcom/snd-soc-apq8016-sbc.ko.zst: kernel/sound/soc/qcom/snd-soc-qcom-common.ko.zst
+kernel/sound/soc/qcom/snd-soc-sdm660-int.ko.zst: kernel/sound/soc/qcom/snd-soc-qcom-common.ko.zst
+kernel/sound/soc/qcom/snd-soc-qcom-common.ko.zst:
+kernel/sound/soc/qcom/snd-soc-qcom-offload-utils.ko.zst: kernel/sound/soc/soc-usb.ko.zst kernel/sound/usb/snd-usb-audio.ko.zst kernel/sound/core/snd-hwdep.ko.zst kernel/sound/usb/snd-usbmidi-lib.ko.zst
+kernel/sound/soc/qcom/qdsp6/snd-q6dsp-common.ko.zst:
+kernel/sound/soc/qcom/qdsp6/q6core.ko.zst: kernel/drivers/soc/qcom/apr.ko.zst kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/sound/soc/qcom/qdsp6/q6afe.ko.zst: kernel/sound/soc/qcom/qdsp6/q6core.ko.zst kernel/drivers/soc/qcom/apr.ko.zst kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/sound/soc/qcom/qdsp6/q6afe-dai.ko.zst: kernel/sound/soc/qcom/qdsp6/snd-q6dsp-common.ko.zst kernel/sound/soc/qcom/qdsp6/q6afe.ko.zst kernel/sound/soc/qcom/qdsp6/q6core.ko.zst kernel/drivers/soc/qcom/apr.ko.zst kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/sound/soc/qcom/qdsp6/q6afe-clocks.ko.zst: kernel/sound/soc/qcom/qdsp6/snd-q6dsp-common.ko.zst kernel/sound/soc/qcom/qdsp6/q6afe.ko.zst kernel/sound/soc/qcom/qdsp6/q6core.ko.zst kernel/drivers/soc/qcom/apr.ko.zst kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/sound/soc/qcom/qdsp6/q6adm.ko.zst: kernel/sound/soc/qcom/qdsp6/snd-q6dsp-common.ko.zst kernel/sound/soc/qcom/qdsp6/q6afe.ko.zst kernel/sound/soc/qcom/qdsp6/q6core.ko.zst kernel/drivers/soc/qcom/apr.ko.zst kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/sound/soc/qcom/qdsp6/q6routing.ko.zst: kernel/sound/soc/qcom/qdsp6/q6adm.ko.zst kernel/sound/soc/qcom/qdsp6/snd-q6dsp-common.ko.zst kernel/sound/soc/qcom/qdsp6/q6afe.ko.zst kernel/sound/soc/qcom/qdsp6/q6core.ko.zst kernel/drivers/soc/qcom/apr.ko.zst kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/sound/soc/qcom/qdsp6/q6asm.ko.zst: kernel/sound/soc/qcom/qdsp6/snd-q6dsp-common.ko.zst kernel/sound/soc/qcom/qdsp6/q6core.ko.zst kernel/drivers/soc/qcom/apr.ko.zst kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/sound/soc/qcom/qdsp6/q6asm-dai.ko.zst: kernel/sound/soc/qcom/qdsp6/q6routing.ko.zst kernel/sound/soc/qcom/qdsp6/q6adm.ko.zst kernel/sound/soc/qcom/qdsp6/q6asm.ko.zst kernel/sound/soc/qcom/qdsp6/snd-q6dsp-common.ko.zst kernel/sound/soc/qcom/qdsp6/q6afe.ko.zst kernel/sound/soc/qcom/qdsp6/q6core.ko.zst kernel/drivers/soc/qcom/apr.ko.zst kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/sound/soc/qcom/qdsp6/snd-q6apm.ko.zst: kernel/drivers/soc/qcom/apr.ko.zst kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/sound/soc/qcom/qdsp6/q6apm-dai.ko.zst: kernel/sound/soc/qcom/qdsp6/snd-q6apm.ko.zst kernel/drivers/soc/qcom/apr.ko.zst kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/sound/soc/qcom/qdsp6/q6apm-lpass-dais.ko.zst: kernel/sound/soc/qcom/qdsp6/snd-q6apm.ko.zst kernel/sound/soc/qcom/qdsp6/snd-q6dsp-common.ko.zst kernel/drivers/soc/qcom/apr.ko.zst kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/sound/soc/qcom/qdsp6/q6prm.ko.zst: kernel/sound/soc/qcom/qdsp6/snd-q6apm.ko.zst kernel/drivers/soc/qcom/apr.ko.zst kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/sound/soc/qcom/qdsp6/q6prm-clocks.ko.zst: kernel/sound/soc/qcom/qdsp6/q6prm.ko.zst kernel/sound/soc/qcom/qdsp6/snd-q6apm.ko.zst kernel/sound/soc/qcom/qdsp6/snd-q6dsp-common.ko.zst kernel/drivers/soc/qcom/apr.ko.zst kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/sound/soc/qcom/qdsp6/q6usb.ko.zst: kernel/sound/soc/qcom/qdsp6/q6afe.ko.zst kernel/sound/soc/qcom/qdsp6/q6core.ko.zst kernel/drivers/soc/qcom/apr.ko.zst kernel/sound/soc/soc-usb.ko.zst kernel/sound/usb/snd-usb-audio.ko.zst kernel/sound/core/snd-hwdep.ko.zst kernel/sound/usb/snd-usbmidi-lib.ko.zst kernel/drivers/soc/qcom/pdr_interface.ko.zst kernel/drivers/soc/qcom/qcom_pdr_msg.ko.zst kernel/drivers/soc/qcom/qmi_helpers.ko.zst
+kernel/sound/soc/soc-usb.ko.zst: kernel/sound/usb/snd-usb-audio.ko.zst kernel/sound/core/snd-hwdep.ko.zst kernel/sound/usb/snd-usbmidi-lib.ko.zst
+kernel/net/core/selftests.ko.zst: kernel/drivers/net/phy/libphy.ko.zst kernel/drivers/net/phy/mdio-bus.ko.zst
+kernel/net/core/failover.ko.zst:
+kernel/net/802/psnap.ko.zst: kernel/net/llc/llc.ko.zst
+kernel/net/802/stp.ko.zst: kernel/net/llc/llc.ko.zst
+kernel/net/802/garp.ko.zst: kernel/net/802/stp.ko.zst kernel/net/llc/llc.ko.zst
+kernel/net/802/mrp.ko.zst:
+kernel/net/sched/sch_dualpi2.ko.zst:
+kernel/net/sched/cls_cgroup.ko.zst:
+kernel/net/netfilter/nfnetlink.ko.zst:
+kernel/net/netfilter/nf_conntrack.ko.zst: kernel/net/ipv6/netfilter/nf_defrag_ipv6.ko.zst kernel/net/ipv4/netfilter/nf_defrag_ipv4.ko.zst
+kernel/net/netfilter/nf_log_syslog.ko.zst:
+kernel/net/netfilter/nf_nat.ko.zst: kernel/net/netfilter/nf_conntrack.ko.zst kernel/net/ipv6/netfilter/nf_defrag_ipv6.ko.zst kernel/net/ipv4/netfilter/nf_defrag_ipv4.ko.zst
+kernel/net/netfilter/nf_tables.ko.zst: kernel/net/netfilter/nfnetlink.ko.zst
+kernel/net/netfilter/nft_compat.ko.zst: kernel/net/netfilter/x_tables.ko.zst kernel/net/netfilter/nf_tables.ko.zst kernel/net/netfilter/nfnetlink.ko.zst
+kernel/net/netfilter/nft_ct.ko.zst: kernel/net/netfilter/nf_conntrack.ko.zst kernel/net/ipv6/netfilter/nf_defrag_ipv6.ko.zst kernel/net/ipv4/netfilter/nf_defrag_ipv4.ko.zst kernel/net/netfilter/nf_tables.ko.zst kernel/net/netfilter/nfnetlink.ko.zst
+kernel/net/netfilter/nft_limit.ko.zst: kernel/net/netfilter/nf_tables.ko.zst kernel/net/netfilter/nfnetlink.ko.zst
+kernel/net/netfilter/nft_nat.ko.zst: kernel/net/netfilter/nf_nat.ko.zst kernel/net/netfilter/nf_conntrack.ko.zst kernel/net/ipv6/netfilter/nf_defrag_ipv6.ko.zst kernel/net/ipv4/netfilter/nf_defrag_ipv4.ko.zst kernel/net/netfilter/nf_tables.ko.zst kernel/net/netfilter/nfnetlink.ko.zst
+kernel/net/netfilter/nft_reject.ko.zst: kernel/net/netfilter/nf_tables.ko.zst kernel/net/netfilter/nfnetlink.ko.zst
+kernel/net/netfilter/nft_reject_inet.ko.zst: kernel/net/ipv4/netfilter/nf_reject_ipv4.ko.zst kernel/net/ipv6/netfilter/nf_reject_ipv6.ko.zst kernel/net/netfilter/nft_reject.ko.zst kernel/net/netfilter/nf_tables.ko.zst kernel/net/netfilter/nfnetlink.ko.zst kernel/net/ipv6/ipv6.ko.zst
+kernel/net/netfilter/nft_log.ko.zst: kernel/net/netfilter/nf_tables.ko.zst kernel/net/netfilter/nfnetlink.ko.zst
+kernel/net/netfilter/nft_masq.ko.zst: kernel/net/netfilter/nf_nat.ko.zst kernel/net/netfilter/nf_conntrack.ko.zst kernel/net/ipv6/netfilter/nf_defrag_ipv6.ko.zst kernel/net/ipv4/netfilter/nf_defrag_ipv4.ko.zst kernel/net/netfilter/nf_tables.ko.zst kernel/net/netfilter/nfnetlink.ko.zst
+kernel/net/netfilter/nft_fib.ko.zst: kernel/net/netfilter/nf_tables.ko.zst kernel/net/netfilter/nfnetlink.ko.zst
+kernel/net/netfilter/nft_fib_inet.ko.zst: kernel/net/ipv4/netfilter/nft_fib_ipv4.ko.zst kernel/net/ipv6/netfilter/nft_fib_ipv6.ko.zst kernel/net/netfilter/nft_fib.ko.zst kernel/net/netfilter/nf_tables.ko.zst kernel/net/netfilter/nfnetlink.ko.zst kernel/net/ipv6/ipv6.ko.zst
+kernel/net/netfilter/nft_chain_nat.ko.zst: kernel/net/netfilter/nf_nat.ko.zst kernel/net/netfilter/nf_conntrack.ko.zst kernel/net/ipv6/netfilter/nf_defrag_ipv6.ko.zst kernel/net/ipv4/netfilter/nf_defrag_ipv4.ko.zst kernel/net/netfilter/nf_tables.ko.zst kernel/net/netfilter/nfnetlink.ko.zst
+kernel/net/netfilter/x_tables.ko.zst:
+kernel/net/netfilter/xt_tcpudp.ko.zst: kernel/net/netfilter/x_tables.ko.zst
+kernel/net/netfilter/xt_mark.ko.zst: kernel/net/netfilter/x_tables.ko.zst
+kernel/net/netfilter/xt_nat.ko.zst: kernel/net/netfilter/nf_nat.ko.zst kernel/net/netfilter/nf_conntrack.ko.zst kernel/net/ipv6/netfilter/nf_defrag_ipv6.ko.zst kernel/net/ipv4/netfilter/nf_defrag_ipv4.ko.zst kernel/net/netfilter/x_tables.ko.zst
+kernel/net/netfilter/xt_CHECKSUM.ko.zst: kernel/net/netfilter/x_tables.ko.zst
+kernel/net/netfilter/xt_LOG.ko.zst: kernel/net/netfilter/x_tables.ko.zst
+kernel/net/netfilter/xt_REDIRECT.ko.zst: kernel/net/netfilter/nf_nat.ko.zst kernel/net/netfilter/nf_conntrack.ko.zst kernel/net/ipv6/netfilter/nf_defrag_ipv6.ko.zst kernel/net/ipv4/netfilter/nf_defrag_ipv4.ko.zst kernel/net/netfilter/x_tables.ko.zst
+kernel/net/netfilter/xt_MASQUERADE.ko.zst: kernel/net/netfilter/nf_nat.ko.zst kernel/net/netfilter/nf_conntrack.ko.zst kernel/net/ipv6/netfilter/nf_defrag_ipv6.ko.zst kernel/net/ipv4/netfilter/nf_defrag_ipv4.ko.zst kernel/net/netfilter/x_tables.ko.zst
+kernel/net/netfilter/xt_TCPMSS.ko.zst: kernel/net/netfilter/x_tables.ko.zst
+kernel/net/netfilter/xt_addrtype.ko.zst: kernel/net/netfilter/x_tables.ko.zst
+kernel/net/netfilter/xt_comment.ko.zst: kernel/net/netfilter/x_tables.ko.zst
+kernel/net/netfilter/xt_conntrack.ko.zst: kernel/net/netfilter/nf_conntrack.ko.zst kernel/net/ipv6/netfilter/nf_defrag_ipv6.ko.zst kernel/net/ipv4/netfilter/nf_defrag_ipv4.ko.zst kernel/net/netfilter/x_tables.ko.zst
+kernel/net/netfilter/xt_ipvs.ko.zst: kernel/net/netfilter/ipvs/ip_vs.ko.zst kernel/net/netfilter/nf_conntrack.ko.zst kernel/net/ipv6/netfilter/nf_defrag_ipv6.ko.zst kernel/net/ipv4/netfilter/nf_defrag_ipv4.ko.zst kernel/net/netfilter/x_tables.ko.zst
+kernel/net/netfilter/xt_multiport.ko.zst: kernel/net/netfilter/x_tables.ko.zst
+kernel/net/netfilter/xt_statistic.ko.zst: kernel/net/netfilter/x_tables.ko.zst
+kernel/net/netfilter/xt_tcpmss.ko.zst: kernel/net/netfilter/x_tables.ko.zst
+kernel/net/netfilter/ipvs/ip_vs.ko.zst: kernel/net/netfilter/nf_conntrack.ko.zst kernel/net/ipv6/netfilter/nf_defrag_ipv6.ko.zst kernel/net/ipv4/netfilter/nf_defrag_ipv4.ko.zst
+kernel/net/netfilter/ipvs/ip_vs_rr.ko.zst: kernel/net/netfilter/ipvs/ip_vs.ko.zst kernel/net/netfilter/nf_conntrack.ko.zst kernel/net/ipv6/netfilter/nf_defrag_ipv6.ko.zst kernel/net/ipv4/netfilter/nf_defrag_ipv4.ko.zst
+kernel/net/ipv4/netfilter/nf_defrag_ipv4.ko.zst:
+kernel/net/ipv4/netfilter/nf_reject_ipv4.ko.zst:
+kernel/net/ipv4/netfilter/nft_reject_ipv4.ko.zst: kernel/net/ipv4/netfilter/nf_reject_ipv4.ko.zst kernel/net/netfilter/nft_reject.ko.zst kernel/net/netfilter/nf_tables.ko.zst kernel/net/netfilter/nfnetlink.ko.zst
+kernel/net/ipv4/netfilter/nft_fib_ipv4.ko.zst: kernel/net/netfilter/nft_fib.ko.zst kernel/net/netfilter/nf_tables.ko.zst kernel/net/netfilter/nfnetlink.ko.zst
+kernel/net/ipv4/netfilter/nft_dup_ipv4.ko.zst: kernel/net/ipv4/netfilter/nf_dup_ipv4.ko.zst kernel/net/netfilter/nf_tables.ko.zst kernel/net/netfilter/nfnetlink.ko.zst
+kernel/net/ipv4/netfilter/ip_tables.ko.zst: kernel/net/netfilter/x_tables.ko.zst
+kernel/net/ipv4/netfilter/iptable_filter.ko.zst: kernel/net/ipv4/netfilter/ip_tables.ko.zst kernel/net/netfilter/x_tables.ko.zst
+kernel/net/ipv4/netfilter/iptable_mangle.ko.zst: kernel/net/ipv4/netfilter/ip_tables.ko.zst kernel/net/netfilter/x_tables.ko.zst
+kernel/net/ipv4/netfilter/iptable_nat.ko.zst: kernel/net/ipv4/netfilter/ip_tables.ko.zst kernel/net/netfilter/nf_nat.ko.zst kernel/net/netfilter/nf_conntrack.ko.zst kernel/net/ipv6/netfilter/nf_defrag_ipv6.ko.zst kernel/net/ipv4/netfilter/nf_defrag_ipv4.ko.zst kernel/net/netfilter/x_tables.ko.zst
+kernel/net/ipv4/netfilter/ipt_REJECT.ko.zst: kernel/net/ipv4/netfilter/nf_reject_ipv4.ko.zst kernel/net/netfilter/x_tables.ko.zst
+kernel/net/ipv4/netfilter/nf_dup_ipv4.ko.zst:
+kernel/net/ipv4/ip_tunnel.ko.zst:
+kernel/net/ipv4/udp_tunnel.ko.zst:
+kernel/net/ipv4/tunnel4.ko.zst:
+kernel/net/ipv6/netfilter/ip6_tables.ko.zst: kernel/net/netfilter/x_tables.ko.zst
+kernel/net/ipv6/netfilter/ip6table_filter.ko.zst: kernel/net/ipv6/netfilter/ip6_tables.ko.zst kernel/net/netfilter/x_tables.ko.zst
+kernel/net/ipv6/netfilter/ip6table_mangle.ko.zst: kernel/net/ipv6/netfilter/ip6_tables.ko.zst kernel/net/netfilter/x_tables.ko.zst kernel/net/ipv6/ipv6.ko.zst
+kernel/net/ipv6/netfilter/ip6table_nat.ko.zst: kernel/net/ipv6/netfilter/ip6_tables.ko.zst kernel/net/netfilter/nf_nat.ko.zst kernel/net/netfilter/nf_conntrack.ko.zst kernel/net/ipv6/netfilter/nf_defrag_ipv6.ko.zst kernel/net/ipv4/netfilter/nf_defrag_ipv4.ko.zst kernel/net/netfilter/x_tables.ko.zst
+kernel/net/ipv6/netfilter/nf_defrag_ipv6.ko.zst:
+kernel/net/ipv6/netfilter/nf_reject_ipv6.ko.zst: kernel/net/ipv6/ipv6.ko.zst
+kernel/net/ipv6/netfilter/nf_dup_ipv6.ko.zst: kernel/net/ipv6/ipv6.ko.zst
+kernel/net/ipv6/netfilter/nft_reject_ipv6.ko.zst: kernel/net/ipv6/netfilter/nf_reject_ipv6.ko.zst kernel/net/netfilter/nft_reject.ko.zst kernel/net/netfilter/nf_tables.ko.zst kernel/net/netfilter/nfnetlink.ko.zst kernel/net/ipv6/ipv6.ko.zst
+kernel/net/ipv6/netfilter/nft_dup_ipv6.ko.zst: kernel/net/ipv6/netfilter/nf_dup_ipv6.ko.zst kernel/net/netfilter/nf_tables.ko.zst kernel/net/netfilter/nfnetlink.ko.zst kernel/net/ipv6/ipv6.ko.zst
+kernel/net/ipv6/netfilter/nft_fib_ipv6.ko.zst: kernel/net/netfilter/nft_fib.ko.zst kernel/net/netfilter/nf_tables.ko.zst kernel/net/netfilter/nfnetlink.ko.zst kernel/net/ipv6/ipv6.ko.zst
+kernel/net/ipv6/netfilter/ip6t_REJECT.ko.zst: kernel/net/ipv6/netfilter/nf_reject_ipv6.ko.zst kernel/net/netfilter/x_tables.ko.zst kernel/net/ipv6/ipv6.ko.zst
+kernel/net/ipv6/ipv6.ko.zst:
+kernel/net/ipv6/sit.ko.zst: kernel/net/ipv4/tunnel4.ko.zst kernel/net/ipv4/ip_tunnel.ko.zst kernel/net/ipv6/ipv6.ko.zst
+kernel/net/ipv6/ip6_udp_tunnel.ko.zst:
+kernel/net/8021q/8021q.ko.zst: kernel/net/802/garp.ko.zst kernel/net/802/stp.ko.zst kernel/net/802/mrp.ko.zst kernel/net/llc/llc.ko.zst
+kernel/net/wireless/cfg80211.ko.zst: kernel/net/rfkill/rfkill.ko.zst
+kernel/net/llc/llc.ko.zst:
+kernel/net/bridge/bridge.ko.zst: kernel/net/802/stp.ko.zst kernel/net/llc/llc.ko.zst kernel/net/ipv6/ipv6.ko.zst
+kernel/net/bridge/br_netfilter.ko.zst: kernel/net/bridge/bridge.ko.zst kernel/net/802/stp.ko.zst kernel/net/llc/llc.ko.zst kernel/net/ipv6/ipv6.ko.zst
+kernel/net/bluetooth/bluetooth.ko.zst: kernel/crypto/ecdh_generic.ko.zst kernel/crypto/ecc.ko.zst kernel/net/rfkill/rfkill.ko.zst
+kernel/net/bluetooth/rfcomm/rfcomm.ko.zst: kernel/net/bluetooth/bluetooth.ko.zst kernel/crypto/ecdh_generic.ko.zst kernel/crypto/ecc.ko.zst kernel/net/rfkill/rfkill.ko.zst
+kernel/net/bluetooth/bnep/bnep.ko.zst: kernel/net/bluetooth/bluetooth.ko.zst kernel/crypto/ecdh_generic.ko.zst kernel/crypto/ecc.ko.zst kernel/net/rfkill/rfkill.ko.zst
+kernel/net/bluetooth/hidp/hidp.ko.zst: kernel/net/bluetooth/bluetooth.ko.zst kernel/crypto/ecdh_generic.ko.zst kernel/crypto/ecc.ko.zst kernel/net/rfkill/rfkill.ko.zst
+kernel/net/sunrpc/sunrpc.ko.zst:
+kernel/net/sunrpc/auth_gss/auth_rpcgss.ko.zst: kernel/net/sunrpc/sunrpc.ko.zst
+kernel/net/sunrpc/auth_gss/rpcsec_gss_krb5.ko.zst: kernel/net/sunrpc/auth_gss/auth_rpcgss.ko.zst kernel/net/sunrpc/sunrpc.ko.zst
+kernel/net/mac80211/mac80211.ko.zst: kernel/net/wireless/cfg80211.ko.zst kernel/net/rfkill/rfkill.ko.zst kernel/lib/crypto/libarc4.ko.zst
+kernel/net/rfkill/rfkill.ko.zst:
+kernel/net/dns_resolver/dns_resolver.ko.zst:
+kernel/net/nfc/nfc.ko.zst: kernel/net/rfkill/rfkill.ko.zst
+kernel/net/nfc/nci/nci.ko.zst: kernel/net/nfc/nfc.ko.zst kernel/net/rfkill/rfkill.ko.zst
+kernel/net/qrtr/qrtr.ko.zst:
+kernel/net/qrtr/qrtr-smd.ko.zst: kernel/net/qrtr/qrtr.ko.zst
+kernel/net/qrtr/qrtr-tun.ko.zst: kernel/net/qrtr/qrtr.ko.zst
